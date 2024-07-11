@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+   <title> How to remove an HTML element using JavaScript</title>
+</head>
+<body style = "text-align:center;">
+   <p id="text1">Delete HTML element demo</p>
+   <p id="text2">This paragraph will be deleted....on Click
+    <button onClick = "RemoveDOMelement()">click here</button>
+   </p>
+   
+   <p id = "text3">This is unaffected</p>
+   <!-- Script to remove HTML element -->
+   <script>
+      function RemoveDOMelement() {
+         let para = document.getElementById('text2');
+         para.parentNode.removeChild(para);
+      }
+   </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+    <title>Exercise 2</title>
+</head>
+<body>
+    <div id="one" onclick="run(this)">Red</div>
+    <div id="two" onclick="run(this)">Blue</div>
+    <div id="thr" onclick="run(this)">Green</div>
+    <br/>
+    <div>Clicked On: 
+    <span id="res"></span>
+</div>
+    <script>
+        function run(myEle) {
+            console.log(myEle.innerText);
+            //document.getElementById("res").innerHTML = text
+            message(myEle.innerText)
+        }
+       
+       function message(text) {
+        document.getElementById("res").innerText = text
+       }
+        
+    </script> 
+</body>
+</html>

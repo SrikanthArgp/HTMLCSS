@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Demo Tailwind</title>
+  </head>
+  <body>
+    <div class="bg-amber-200 sm:max-h-full md:h-screen">
+      <div class="bg-amber-200 h-5"></div>
+      <!-- Box Model -->
+      <div class="bg-slate-400 w-fit p-3 mx-auto rounded-lg shadow-lg hover:skew-x-6 duration-300 ease-in-out">
+        <h1 class="text-3xl text-white font-serif ">Hello world!</h1>
+      </div>
+      <!-- Image container -->
+      <div
+        class="bg-gray-300 w-fit mx-auto mt-5 p-8 rounded-md border-orange-600 border-4"
+      >
+        <h1 class="text-3xl text-center">Title</h1>
+        <h3 class="text-xl text-white font-light  sm:invisible md:visible">Sub Title</h3>
+        <img
+          src="./painting-mountain.avif"
+          class=" w-50 h-50 hover:scale-95 duration-300 ease-in-out
+          hover:opacity-50"
+        />
+
+      </div>
+      <!-- flex container -->
+      <div class="mt-4 flex flex-col md:flex-row justify-between items-center">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+      </div>
+
+      <div class="mt-10 text-center sm:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div>Item 5</div>
+        <div>Item 6</div>
+        <div>Item 7</div>
+        <div>Item 8</div>
+        <div>Item 9</div>
+        <div>Item 10</div>
+      </div>
+    </div>
+  </body>
+</html>

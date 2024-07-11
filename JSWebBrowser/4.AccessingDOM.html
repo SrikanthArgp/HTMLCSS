@@ -1,0 +1,14 @@
+<html>
+  <body>
+    <h1 style="color:rgb(165, 65, 165)">Just an example</h1>
+    <div id="one" class="example">Hi!</div>
+    <div id="two" class="example" onclick="changeText(this)">Hi!</div>
+    <div id="three" class="something">Hi!</div>
+  </body>
+  <script>
+    console.log(document.getElementById("two"));
+    function changeText(el) {
+      document.getElementById("two").innerText = "Bye!";
+    }
+  </script>
+</html>

@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <body>
+    <div id="divvy" onmouseover="changeColor()" onmouseleave="changeColorBack()"
+    onmousedown="changeDown()" onmouseup="changeUp()" ondblclick="twoClick()" style="width: 100px; height: 100px; background-color: pink;">
+    <script>
+      function changeColor() {
+        document.getElementById("divvy").style.backgroundColor = "blue";
+      }
+
+      function changeColorBack() {
+        document.getElementById("divvy").style.backgroundColor = "pink";
+      }
+      function changeDown() {
+        document.getElementById("divvy").style.backgroundColor = "green";
+      }
+
+      function changeUp() {
+        document.getElementById("divvy").style.backgroundColor = "yellow";
+      }
+
+      function twoClick() {
+        document.getElementById("divvy").style.backgroundColor = "chocolate";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <button onclick="addRandomNumber()">Add a number</button>
+    <ol id="output">
+
+    </ol>
+    <script>
+      function addRandomNumber(){
+        let li = document.createElement("li");
+        
+        innerText = Math.floor(Math.random() * 100);
+        li.appendChild(document.createTextNode(innerText));
+        document.getElementById("output").appendChild(li);
+      }
+    </script>
+    
+  </body>
+</html>
